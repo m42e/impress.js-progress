@@ -31,5 +31,5 @@ Until m42e/impress.js@f367c84 isn't accepted there's the need to patch js/impres
 
 Changing line 402 like this:
 
-triggerEvent(root, "impress:init", { api: roots[ "impress-root-" + rootId ] });
-triggerEvent(root, "impress:init", { api: roots[ "impress-root-" + rootId ], steps: steps });
+	triggerEvent(root, "impress:init", { api: roots[ "impress-root-" + rootId ] });
+	triggerEvent(root, "impress:init", { api: roots[ "impress-root-" + rootId ], steps: steps });
