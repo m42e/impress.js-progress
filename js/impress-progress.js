@@ -13,7 +13,7 @@
 	var progressbar = document.querySelector('div.progressbar div');
 	var progress = document.querySelector('div.progress');
 	
-	if (null !== progressbar || null !== progressbar) {      
+	if (null !== progressbar || null !== progress) {      
 		document.addEventListener("impress:starttransition", function (event) {
 			updateProgressbar(event.detail.next.id);
 		});
