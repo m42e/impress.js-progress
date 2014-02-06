@@ -24,3 +24,12 @@ just before including impress.js.
 That's it.
 
 Feel free to change the style of your progressbar as you like by editing the CSS file.
+
+Note
+---------------------
+Until m42e/impress.js@f367c84 isn't accepted there's the need to patch js/impress.js to add the steps data to init().
+
+Changing line 402 like this:
+
+triggerEvent(root, "impress:init", { api: roots[ "impress-root-" + rootId ] });
+triggerEvent(root, "impress:init", { api: roots[ "impress-root-" + rootId ], steps: steps });
